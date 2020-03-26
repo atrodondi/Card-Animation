@@ -1,2 +1,2 @@
-# atrodondi-gmail.com
-Card Animation
+# Card Animation
+Practicing some CSS
