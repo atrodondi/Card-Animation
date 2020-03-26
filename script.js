@@ -1,3 +1,4 @@
+// allows for mobile users to click the cards to flip
 function mobile() {
   $(".cardBox").on("click", function() {
     if ($(document).width() < 1440) {
@@ -10,8 +11,9 @@ function mobile() {
 }
 mobile();
 
+//a function that allows cards flipped in smaller screens able to be unflipped if somehow the screen got larger. ultimately, i wanna write code depending on touch screen or not, then do certain queries for size
 function mobile1() {
-  $(".cardBox").hover(function() {
+  $(".cardBox").mouseenter(function() {
     if (
       $(this)
         .children()
