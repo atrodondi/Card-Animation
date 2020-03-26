@@ -2,6 +2,7 @@
   position: relative;
   width: 250px;
   height: 300px;
+  display: inline-block;
 }
 
 .card {
@@ -12,14 +13,15 @@
   transition: all 0.5s ease;
 }
 
-.front {
+#box1 .front {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  background: #0abde3;
 }
 
-.back {
+#box1 .back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -29,6 +31,30 @@
   transform: rotateY(180deg);
 }
 
-.card:hover {
+@media screen and (min-width: 1440px) {
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+}
+
+#box2 .front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #e74c3c;
+}
+
+#box2 .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #8e44ad;
+  color: #333;
+  transform: rotateY(180deg);
+}
+
+.flipped {
   transform: rotateY(180deg);
 }
