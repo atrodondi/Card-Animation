@@ -36,7 +36,6 @@
     transform: rotateY(180deg);
   }
 }
-
 #box2 .front {
   position: absolute;
   width: 100%;
